@@ -1,3 +1,4 @@
+setwd(".......\exdata_data_household_power_consumption")
 File <- "./data/household_power_consumption.txt"
 data <- read.table(File, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
 subSetdata <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
